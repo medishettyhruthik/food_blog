@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+@media (min-width:500px){
+
+    body{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+.header{
+    background-image:url('./Images/first.png');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.header h3{
+
+    font-size: 3rem;
+
+}
+
+.header span{
+    color:orange;
+}
+
+.two{
+    display: flex;
+    height:30%;
+}
+
+.two .left {
+    width:50%;
+
+}
+
+.two .left p{
+
+    font-size: 0.8rem;
+   padding-top: 14rem;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+
+.two .right{
+
+    width:50%;
+   
+}
+
+.two .right img{
+
+    height:30rem;
+    width: 20rem;
+    
+}
+
+.three {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6rem;
+}
+
+.three div p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.three .six div p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.three img {
+
+    height:10rem;
+    width:10rem;
+    margin-top: 2rem;
+   
+}
+
+.para{
+    text-align: center;
+}
+
+.four{
+    margin-top: 8rem;
+    display: flex;
+
+   
+}
+
+.four1{
+    width: 50%;
+}
+
+.four2{
+    font-size: 1rem;
+    font-weight:normal;
+}
+
+.five{
+    margin-top: 6rem;
+    display: flex;
+}
+
+
+
+.five2{
+    width:50%;
+   
+}
+
+.five2 img{
+    height:10rem;
+    width:10rem;
+    
+}
+
+.six{
+    background-color: gray;
+    width:100%;
+    margin-top: 3rem;
+    height:8rem;
+   text-align: center;
+
+  
+
+}
+
+.six p:hover{
+    text-decoration: underline;
+}
+
+.six img{
+
+   
+    height:3rem;
+    width:3rem;
+   
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    
+   
+
+}
+
+.footer .email{
+display:flex;
+
+}
+
+/* First remove borders for email and button and then give border for all elements*/
+
+.email{
+    border :1px solid orange;
+}
+.email input[type=text]{
+    border: none;
+}
+
+
+.email button[type=submit]{
+    border: none;
+    background: none;
+    background-color: orange;
+}
+.footer li{
+    list-style: none;
+    margin-top: 0.2rem;
+    
+}
+
+/*Animations*/
+
+/*Need to have a keyframe and also element need to animate*/
+
+.header h3{
+    animation: slideInleft 1s ease-in 2s 1 normal both;
+} 
+
+.left  p{
+    animation: slideInleft 1s ease-in 6s 1 normal both;
+}
+
+
+.four2 p{
+    animation: slideInleft 1s ease-in 6s 1 normal both;   
+}
+
+.five1 p{
+    animation: slideInleft 1s ease-in 6s 1 normal both;
+}
+
+
+
+@keyframes slideInleft{
+    from {
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+.header p{
+    animation: slideInright 1s ease-in 2s 1 normal both;
+}
+
+@keyframes slideInright{
+    from {
+        transform: translate(300px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+}
